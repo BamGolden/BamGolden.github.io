@@ -1,11 +1,300 @@
-<!doctype html><html lang="ja"><meta charset="utf-8">
-<title>Swim Clownfish サポート</title>
-<h1>Swim Clownfish サポート</h1>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Remak サポート</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-soft: #0b1020;
+      --accent: #42c6ff;
+      --accent-soft: rgba(66, 198, 255, 0.16);
+      --text-main: #f7f7ff;
+      --text-sub: #a5afc7;
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.6);
+      --radius-lg: 18px;
+    }
 
-<p>お問い合わせはこちらから</p>
-<ul>
-  <li>メール: <a href="mailto:remakei2024@gmail.com?subject=Swim%20Clownfish%20Support">remakei2024@gmail.com</a></li>
-</ul>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<p><a href="/app-ads.txt">app-ads.txt</a></p>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        "Segoe UI", sans-serif;
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at 0 0, rgba(66, 198, 255, 0.16), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(118, 160, 255, 0.22), transparent 55%),
+        radial-gradient(circle at 50% 120%, rgba(0, 180, 140, 0.18), transparent 60%),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0)
+        ),
+        var(--bg-soft);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      padding: 28px 24px 22px;
+      backdrop-filter: blur(16px);
+    }
+
+    @media (min-width: 720px) {
+      .card {
+        padding: 32px 32px 26px;
+      }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background:
+        radial-gradient(circle at 30% 20%, #ffffff, transparent 65%),
+        radial-gradient(circle at 70% 80%, #42c6ff, transparent 60%),
+        radial-gradient(circle at 20% 90%, #24e3b5, transparent 60%),
+        #050816;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.03em;
+      color: var(--text-main);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
+    }
+
+    .title-block h1 {
+      font-size: clamp(1.6rem, 1.3rem + 0.8vw, 1.9rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .title-sub {
+      margin-top: 4px;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 6px 10px 6px 6px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(66, 198, 255, 0.4);
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(66, 198, 255, 0.9);
+    }
+
+    main {
+      display: grid;
+      gap: 22px;
+    }
+
+    @media (min-width: 720px) {
+      main {
+        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+        gap: 26px;
+      }
+    }
+
+    .section-title {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .text-muted {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+    .contact-card {
+      margin-top: 14px;
+      padding: 14px 14px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at 0 0, rgba(66, 198, 255, 0.12), transparent 60%);
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 8px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 4px;
+      font-size: 0.92rem;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .games-card {
+      padding: 14px 14px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at 100% 0, rgba(118, 160, 255, 0.16), transparent 60%);
+      font-size: 0.9rem;
+    }
+
+    .games-list {
+      list-style: none;
+      margin-top: 10px;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .game-name {
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 22px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.78rem;
+      color: var(--text-sub);
+    }
+
+    .footer-left span {
+      opacity: 0.9;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .tag {
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-size: 0.78rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <header>
+      <div class="logo">R</div>
+      <div class="title-block">
+        <h1>Remak サポート</h1>
+        <p class="title-sub">うみたっぷ！癒しの海 / Swim Clownfish など、Remak が開発したゲームのサポートページです。</p>
+      </div>
+    </header>
+
+    <div class="pill">
+      <span class="pill-dot"></span>
+      <span>ご意見・不具合報告など、お気軽にお問い合わせください。</span>
+    </div>
+
+    <main>
+      <section>
+        <h2 class="section-title">お問い合わせ</h2>
+        <p class="text-muted">
+          プレイ中に気になった点や、不具合の報告、ご要望などがありましたら、下記のメールアドレスまでご連絡ください。
+        </p>
+
+        <div class="contact-card">
+          <p class="contact-label">CONTACT</p>
+          <ul class="contact-list">
+            <li>
+              メール :
+              <a href="mailto:remakei2024@gmail.com?subject=Remak%20Support%20お問い合わせ">
+                remakei2024@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">サポート対象タイトル</h2>
+        <p class="text-muted">
+          現在こちらのページでは、以下のタイトルのサポートを行っています。
+        </p>
+
+        <div class="games-card">
+          <ul class="games-list">
+            <li>
+              <span class="game-name">うみたっぷ！癒しの海</span><br>
+              ゆったりとした海の中で、生き物たちを眺めながら遊べる放置 × タップゲーム。
+            </li>
+            <li>
+              <span class="game-name">Swim Clownfish</span><br>
+              クマノミを操作して遊ぶ、シンプルで遊びやすいカジュアルゲーム。
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <div class="footer-left">
+        <span>© Remak</span>
+      </div>
+      <div class="footer-links">
+        <span class="tag">developer</span>
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
