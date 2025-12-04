@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ぽけくま - ポケットクマノミ プライバシーポリシー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tabs button {
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    .tabs button.active {
+      background: #007aff;
+      color: #fff;
+      border-color: #007aff;
+    }
+    .policy {
+      display: none;
+    }
+    .policy.active {
+      display: block;
+    }
+    h2 {
+      margin-top: 16px;
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    ul {
+      margin: 8px 0 8px 20px;
+      line-height: 1.6;
+    }
+  </style>
+  <script>
+    function showPolicy(lang) {
+      document.querySelectorAll('.policy').forEach(el => el.classList.remove('active'));
+      document.getElementById('policy-' + lang).classList.add('active');
+      document.querySelectorAll('.tabs button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => showPolicy('ja'));
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>ぽけくま - ポケットクマノミ&nbsp;プライバシーポリシー</h1>
+
+    <!-- 言語切替ボタン -->
+    <div class="tabs">
+      <button id="btn-ja" onclick="showPolicy('ja')">日本語</button>
+      <button id="btn-en" onclick="showPolicy('en')">English</button>
+      <button id="btn-ko" onclick="showPolicy('ko')">한국어</button>
+      <button id="btn-zh" onclick="showPolicy('zh')">中文</button>
+    </div>
+
+    <!-- 日本語 -->
+    <div id="policy-ja" class="policy">
+      <h2>1. はじめに</h2>
+      <p>本ポリシーは、「ぽけくま - ポケットクマノミ」（以下「本アプリ」）におけるお客様の個人情報の取扱いについて定めるものです。</p>
+
+      <h2>2. 収集する情報</h2>
+      <p>本アプリでは、品質向上および広告配信のために以下の情報を収集する場合があります。</p>
+      <ul>
+        <li>端末情報、利用状況データ、クラッシュログ</li>
+        <li>広告識別子（IDFA/GAID 等）</li>
+        <li>アプリ内課金の購入履歴（個人を特定しない形でサーバー処理）</li>
+      </ul>
+
+      <h2>3. 利用目的</h2>
+      <p>収集した情報は以下の目的で利用します。</p>
+      <ul>
+        <li>本アプリの機能提供および品質改善（飼育進行や水槽管理の安定動作のため）</li>
+        <li>広告の配信および効果測定</li>
+        <li>アプリ内課金コンテンツの提供と決済処理</li>
+        <li>お問い合わせ対応と不具合調査</li>
+      </ul>
+
+      <h2>4. 第三者サービス</h2>
+      <p>当社は、以下の第三者サービスを利用する場合があります。詳細は各サービスのプライバシーポリシーをご確認ください。</p>
+      <ul>
+        <li>広告ネットワーク（例: Google AdMob 等）</li>
+        <li>分析・計測ツール（例: Google Analytics for Firebase 等）</li>
+        <li>アプリ内課金プロバイダ（Apple App Store、Google Play 等）</li>
+      </ul>
+
+      <h2>5. 個人情報の管理</h2>
+      <p>当社は、収集した情報を適切に管理し、不正アクセス、紛失、改ざん、漏えいを防止するための合理的な安全対策を講じます。</p>
+
+      <h2>6. プライバシーポリシーの変更</h2>
+      <p>本ポリシーは必要に応じて改定することがあります。重要な変更がある場合はアプリ内やウェブサイトでお知らせします。</p>
+
+      <h2>7. お問い合わせ</h2>
+      <p>本ポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+      <p>メール: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- English -->
+    <div id="policy-en" class="policy">
+      <h2>1. Introduction</h2>
+      <p>This policy explains how “Pokekuma - Pocket Clownfish” (the “App”) handles your personal information.</p>
+
+      <h2>2. Information We Collect</h2>
+      <p>We may collect the following information for app improvement and advertising:</p>
+      <ul>
+        <li>Device information, usage data, and crash logs</li>
+        <li>Advertising identifiers (IDFA/GAID, etc.)</li>
+        <li>In-app purchase history (processed without linking to personally identifiable data)</li>
+      </ul>
+
+      <h2>3. Purpose of Use</h2>
+      <p>Collected information is used for:</p>
+      <ul>
+        <li>Providing and improving app features (stable aquarium care and tank management)</li>
+        <li>Serving advertisements and measuring their effectiveness</li>
+        <li>Delivering and processing in-app purchases</li>
+        <li>Responding to inquiries and investigating issues</li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+      <p>We may use the following third-party services. Please refer to each service’s privacy policy for details:</p>
+      <ul>
+        <li>Advertising networks (e.g., Google AdMob)</li>
+        <li>Analytics/measurement tools (e.g., Google Analytics for Firebase)</li>
+        <li>In-app billing providers (Apple App Store, Google Play)</li>
+      </ul>
+
+      <h2>5. Data Management</h2>
+      <p>We take reasonable security measures to protect collected information from unauthorized access, loss, alteration, or leakage.</p>
+
+      <h2>6. Changes to This Policy</h2>
+      <p>This policy may be updated as needed. Significant changes will be announced in the App or on our website.</p>
+
+      <h2>7. Contact</h2>
+      <p>If you have questions, please contact: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- 한국어 -->
+    <div id="policy-ko" class="policy">
+      <h2>1. 소개</h2>
+      <p>본 정책은 “포케쿠마 - 포켓 클라운피시”(이하 “앱”)이 귀하의 개인정보를 어떻게 처리하는지 설명합니다.</p>
+
+      <h2>2. 수집하는 정보</h2>
+      <p>앱 개선 및 광고 제공을 위해 다음 정보를 수집할 수 있습니다.</p>
+      <ul>
+        <li>기기 정보, 사용 데이터, 크래시 로그</li>
+        <li>광고 식별자(IDFA/GAID 등)</li>
+        <li>앱 내 구매 내역(개인을 식별하지 않는 형태로 처리)</li>
+      </ul>
+
+      <h2>3. 이용 목적</h2>
+      <p>수집한 정보는 다음 목적으로 사용됩니다.</p>
+      <ul>
+        <li>앱 기능 제공 및 품질 개선(수족관 관리의 안정적 동작 포함)</li>
+        <li>광고 제공 및 효과 측정</li>
+        <li>앱 내 결제 제공 및 처리</li>
+        <li>문의 대응 및 문제 조사</li>
+      </ul>
+
+      <h2>4. 제3자 서비스</h2>
+      <p>다음과 같은 제3자 서비스를 사용할 수 있습니다. 자세한 내용은 각 서비스의 개인정보처리방침을 확인해 주세요.</p>
+      <ul>
+        <li>광고 네트워크(예: Google AdMob)</li>
+        <li>분석/측정 도구(예: Google Analytics for Firebase)</li>
+        <li>앱 내 결제 제공자(Apple App Store, Google Play 등)</li>
+      </ul>
+
+      <h2>5. 개인정보 관리</h2>
+      <p>수집한 정보를 보호하기 위해 무단 접근, 분실, 변조, 유출을 방지하는 합리적인 보안 조치를 취합니다.</p>
+
+      <h2>6. 정책 변경</h2>
+      <p>본 정책은 필요에 따라 변경될 수 있으며, 중요한 변경 사항은 앱이나 웹사이트를 통해 안내합니다.</p>
+
+      <h2>7. 문의처</h2>
+      <p>문의 사항이 있으시면 다음 이메일로 연락해 주세요: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- 中文 -->
+    <div id="policy-zh" class="policy">
+      <h2>1. 引言</h2>
+      <p>本政策说明《口袋小丑鱼》（以下简称“本应用”）如何处理您的个人信息。</p>
+
+      <h2>2. 收集的信息</h2>
+      <p>为改进应用和投放广告，我们可能收集以下信息：</p>
+      <ul>
+        <li>设备信息、使用数据、崩溃日志</li>
+        <li>广告标识符（IDFA、GAID 等）</li>
+        <li>应用内购买记录（不与可识别个人的信息关联）</li>
+      </ul>
+
+      <h2>3. 信息用途</h2>
+      <p>收集的信息将用于：</p>
+      <ul>
+        <li>提供和改进应用功能（确保水槽管理和照料的稳定运行）</li>
+        <li>投放广告并评估其效果</li>
+        <li>处理应用内购买</li>
+        <li>回复咨询并调查问题</li>
+      </ul>
+
+      <h2>4. 第三方服务</h2>
+      <p>我们可能使用以下第三方服务。详情请参阅各服务的隐私政策。</p>
+      <ul>
+        <li>广告网络（如 Google AdMob）</li>
+        <li>分析/统计工具（如 Google Analytics for Firebase）</li>
+        <li>应用内结算服务（Apple App Store、Google Play 等）</li>
+      </ul>
+
+      <h2>5. 数据管理</h2>
+      <p>我们将采取合理的安全措施，防止未经授权的访问、丢失、篡改或泄露。</p>
+
+      <h2>6. 政策变更</h2>
+      <p>本政策可能会根据需要进行更新，重大变更将在应用内或网站上通知。</p>
+
+      <h2>7. 联系方式</h2>
+      <p>如有任何疑问，请联系：<a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
