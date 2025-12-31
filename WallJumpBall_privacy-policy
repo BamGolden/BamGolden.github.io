@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Wall Jump Ball プライバシーポリシー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tabs button {
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    .tabs button.active {
+      background: #007aff;
+      color: #fff;
+      border-color: #007aff;
+    }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    h2 { margin-top: 16px; font-size: 1.2rem; }
+    p { margin: 8px 0; line-height: 1.6; }
+  </style>
+  <script>
+    function showPolicy(lang) {
+      document.querySelectorAll('.policy').forEach(el => el.classList.remove('active'));
+      document.getElementById('policy-' + lang).classList.add('active');
+      document.querySelectorAll('.tabs button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => showPolicy('ja'));
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Wall Jump Ball プライバシーポリシー</h1>
+
+    <div class="tabs">
+      <button id="btn-ja" onclick="showPolicy('ja')">日本語</button>
+      <button id="btn-en" onclick="showPolicy('en')">English</button>
+      <button id="btn-ko" onclick="showPolicy('ko')">한국어</button>
+      <button id="btn-zh" onclick="showPolicy('zh')">中文</button>
+    </div>
+
+    <!-- 日本語 -->
+    <div id="policy-ja" class="policy">
+      <h2>1. はじめに</h2>
+      <p>本ポリシーは、Wall Jump Ball（以下「本アプリ」）における個人情報等の取扱いについて定めます。</p>
+
+      <h2>2. 収集する情報</h2>
+      <p>品質向上・広告配信・ランキング運用・課金処理のため、以下の情報を取得する場合があります。</p>
+      <ul>
+        <li>端末情報、利用状況データ、クラッシュログ</li>
+        <li>広告識別子（IDFA/GAID 等）</li>
+        <li>ランキング用のプレイヤー名・スコア・プレイ記録</li>
+        <li>アプリ内課金の購入履歴（個人特定に紐付けない形）</li>
+      </ul>
+
+      <h2>3. 利用目的</h2>
+      <ul>
+        <li>アプリ機能の提供・改善、動作確認</li>
+        <li>広告配信と効果測定</li>
+        <li>ランキング機能の提供（スコア送信・表示）</li>
+        <li>アプリ内課金コンテンツの提供と決済処理</li>
+      </ul>
+
+      <h2>4. 第三者サービス</h2>
+      <p>以下のサービスを利用する場合があります。詳細は各社のプライバシーポリシーをご確認ください。</p>
+      <ul>
+        <li>広告ネットワーク：Google AdMob</li>
+        <li>ランキング：Apple Game Center / Google Play Games Services</li>
+        <li>課金：Apple App Store / Google Play Billing</li>
+        <li>分析・クラッシュレポート（OS/ストア標準機能を含む）</li>
+      </ul>
+
+      <h2>5. データ管理</h2>
+      <p>収集した情報は不正アクセス・漏えい等を防ぐため適切に管理します。</p>
+
+      <h2>6. プライバシーポリシーの変更</h2>
+      <p>必要に応じて本ポリシーを改定することがあります。重要な変更はアプリ内やウェブサイトでお知らせします。</p>
+
+      <h2>7. お問い合わせ</h2>
+      <p>本ポリシーに関するお問い合わせは以下までご連絡ください。</p>
+      <p>メール: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- English -->
+    <div id="policy-en" class="policy">
+      <h2>1. Introduction</h2>
+      <p>This policy explains how Wall Jump Ball (“the App”) handles personal information.</p>
+
+      <h2>2. Information We Collect</h2>
+      <p>For quality improvement, ads, leaderboards, and billing, we may collect:</p>
+      <ul>
+        <li>Device info, usage data, crash logs</li>
+        <li>Advertising identifiers (IDFA/GAID, etc.)</li>
+        <li>Leaderboard data (player name, score, play records)</li>
+        <li>In-app purchase history (not tied to personally identifiable data)</li>
+      </ul>
+
+      <h2>3. Purpose of Use</h2>
+      <ul>
+        <li>Provide and improve app functionality and stability</li>
+        <li>Serve ads and measure performance</li>
+        <li>Provide leaderboard features (submit and display scores)</li>
+        <li>Process in-app purchases</li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+      <p>We may use the following services. Please refer to each provider’s privacy policy:</p>
+      <ul>
+        <li>Ads: Google AdMob</li>
+        <li>Leaderboards: Apple Game Center / Google Play Games Services</li>
+        <li>Billing: Apple App Store / Google Play Billing</li>
+        <li>Analytics / crash reporting (including OS/store standard features)</li>
+      </ul>
+
+      <h2>5. Data Management</h2>
+      <p>We take reasonable measures to protect collected data from unauthorized access, loss, or leakage.</p>
+
+      <h2>6. Changes</h2>
+      <p>We may update this policy when necessary. Important changes will be announced in the app or on our website.</p>
+
+      <h2>7. Contact</h2>
+      <p>Please contact: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- 한국어 -->
+    <div id="policy-ko" class="policy">
+      <h2>1. 소개</h2>
+      <p>본 정책은 Wall Jump Ball(이하 “앱”)이 개인정보를 어떻게 처리하는지 설명합니다.</p>
+
+      <h2>2. 수집하는 정보</h2>
+      <p>품질 개선, 광고, 리더보드, 결제를 위해 다음 정보를 수집할 수 있습니다.</p>
+      <ul>
+        <li>기기 정보, 사용 데이터, 크래시 로그</li>
+        <li>광고 식별자(IDFA/GAID 등)</li>
+        <li>리더보드용 플레이어 이름, 점수, 플레이 기록</li>
+        <li>앱 내 구매 내역(개인 식별 정보와 분리된 형태)</li>
+      </ul>
+
+      <h2>3. 이용 목적</h2>
+      <ul>
+        <li>앱 기능 제공 및 안정성/품질 향상</li>
+        <li>광고 제공 및 성과 측정</li>
+        <li>리더보드 기능 제공(점수 제출·표시)</li>
+        <li>인앱 결제 처리</li>
+      </ul>
+
+      <h2>4. 제3자 서비스</h2>
+      <p>다음 서비스를 이용할 수 있습니다. 자세한 내용은 각사의 개인정보 처리방침을 확인하십시오.</p>
+      <ul>
+        <li>광고: Google AdMob</li>
+        <li>리더보드: Apple Game Center / Google Play Games Services</li>
+        <li>결제: Apple App Store / Google Play Billing</li>
+        <li>분석/크래시 리포트(OS/스토어 기본 기능 포함)</li>
+      </ul>
+
+      <h2>5. 데이터 관리</h2>
+      <p>수집된 정보를 무단 접근, 분실, 유출로부터 보호하기 위해 합리적인 조치를 취합니다.</p>
+
+      <h2>6. 정책 변경</h2>
+      <p>필요 시 정책을 업데이트할 수 있으며, 중요한 변경 사항은 앱 또는 웹사이트를 통해 공지합니다.</p>
+
+      <h2>7. 문의</h2>
+      <p>문의: <a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+
+    <!-- 中文 -->
+    <div id="policy-zh" class="policy">
+      <h2>1. 引言</h2>
+      <p>本政策说明《Wall Jump Ball》（以下简称“本应用”）如何处理您的个人信息。</p>
+
+      <h2>2. 收集的信息</h2>
+      <p>为改进质量、投放广告、排行榜和支付，我们可能收集：</p>
+      <ul>
+        <li>设备信息、使用数据、崩溃日志</li>
+        <li>广告标识符（IDFA/GAID 等）</li>
+        <li>排行榜数据（玩家名称、分数、游戏记录）</li>
+        <li>应用内购买记录（不与个人身份信息直接关联）</li>
+      </ul>
+
+      <h2>3. 信息用途</h2>
+      <ul>
+        <li>提供和改进应用功能与稳定性</li>
+        <li>投放广告并评估效果</li>
+        <li>提供排行榜功能（提交与显示分数）</li>
+        <li>处理应用内支付</li>
+      </ul>
+
+      <h2>4. 第三方服务</h2>
+      <p>可能使用以下服务，详情请查阅各自的隐私政策：</p>
+      <ul>
+        <li>广告：Google AdMob</li>
+        <li>排行榜：Apple Game Center / Google Play Games Services</li>
+        <li>支付：Apple App Store / Google Play Billing</li>
+        <li>分析/崩溃报告（含操作系统/商店标准功能）</li>
+      </ul>
+
+      <h2>5. 数据管理</h2>
+      <p>我们将采取合理措施保护收集的数据，防止未经授权的访问、丢失或泄露。</p>
+
+      <h2>6. 政策变更</h2>
+      <p>如有需要，我们可能更新本政策，重大变更会在应用内或网站上通知。</p>
+
+      <h2>7. 联系方式</h2>
+      <p>如有疑问，请联系：<a href="mailto:remakei2024@gmail.com">remakei2024@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
